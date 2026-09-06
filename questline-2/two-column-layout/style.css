@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+  background-color: #f0f4f8; /* Normal screen background color */
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for screens below 500px */
+@media (max-width: 500px) {
+  body {
+    background-color: #ffcccc; /* Background color changes below 500px */
+  }
+
+  .container {
+    flex-direction: column; /* Stacks columns vertically on mobile */
+  }
+}
